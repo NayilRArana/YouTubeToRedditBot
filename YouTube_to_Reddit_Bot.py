@@ -6,9 +6,6 @@ Created on Sat Sep 29 19:03:05 2018
 """
 
 import praw
-import pdb
-import re
-import os
 import urllib
 import urllib.request
 import json
@@ -66,26 +63,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-'''subreddit = reddit.subreddit("testingground4bots")
-if not os.path.isfile("posts_replied_to.txt"):
-    posts_replied_to = []
-    #if posts_replied_to.txt does not exist, creates an empty list called posts_replied_to
-else:
-    with open("posts_replied_to.txt", "r") as f:
-        posts_replied_to = f.read()
-        posts_replied_to = posts_replied_to.split("\n")
-        posts_replied_to = list(filter(None, posts_replied_to))
-    #opens posts_replied_to.txt, reads the file, and splits it to put the data into the list posts_replied_to.
-    #empty values are filtered out
-for submission in subreddit.new(limit=5):
-    if submission.id not in posts_replied_to:
-        if re.search("could care less", submission.selftext, re.IGNORECASE):
-            submission.reply("I think you meant 'couldn't care less'. I am a bot.")
-            print("Bot replying to : ", submission.title)
-            posts_replied_to.append(submission.id)
-            with open("posts_replied_to.txt", "w") as f:
-                for post_id in posts_replied_to:
-                    f.write(post_id + "\n")'''
-                    
-'''https://stackoverflow.com/questions/15512239/python-get-all-youtube-video-urls-of-a-channel/44871104#44871104'''
