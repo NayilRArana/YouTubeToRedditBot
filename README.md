@@ -1,4 +1,4 @@
-# YouTube-to-Reddit-Bot
+# YouTubeToRedditBot
 
 This is a simple personal use script that posts my latests YouTube video to any number of subreddits of my choosing. (I run a small YouTube  chiptune music channel with 50K subscribers; it's one of my main sources of side income. Check it out if you are so inclined: https://www.youtube.com/channel/UCsej4tgCoXDgVH3J7M3NMgw)
 
