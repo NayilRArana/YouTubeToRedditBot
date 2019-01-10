@@ -10,7 +10,10 @@ import urllib
 import urllib.request
 import json
 
-
+# get_most_recent_video searches YouTube for my most recent video, parses the resulting JSON data,
+#   and returns an array containing the url and the video title.
+# get_most_recent_video: None -> (listof String)
+# side effects: variable mutation, console output
 def get_most_recent_video():
     
     api_key = 'AIzaSyCRYBoHC4L_CYeT9LaeG3hyIc1KQLD1owo'
@@ -30,6 +33,9 @@ def get_most_recent_video():
     print("You are about to post '" + url_with_title[1] + "' to Reddit.\n")
     return url_with_title
 
+# post_video posts the video from get_most_recent_video to any number of subreddits based on user input.
+# post_video: None -> None
+# side effects: array/variable mutation, input, output, posts to Reddit, throws exceptions
 def post_video():
     url_with_title = get_most_recent_video()
     url = url_with_title[0]
